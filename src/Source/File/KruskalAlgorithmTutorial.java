@@ -33,7 +33,6 @@ public class KruskalAlgorithmTutorial extends GLCanvas implements GLEventListene
     int [][] edges; int [][] nedges;
     int step,textureID,container,word,mx,my,e,c;
     private TextRenderer t;
-    boolean [] visited;
     boolean mouseDragged,mouseMoved,mouseClicked,mouseReleased,accept,reset;
     
     public KruskalAlgorithmTutorial()
@@ -53,8 +52,6 @@ public class KruskalAlgorithmTutorial extends GLCanvas implements GLEventListene
         container = -1;
         visited = new boolean[5];
         reset = true;
-        
-        for(int i = 0;i < 5;i++) visited[i] = false;
     }
     
     
@@ -131,7 +128,7 @@ public class KruskalAlgorithmTutorial extends GLCanvas implements GLEventListene
 
             //now writing for edges
             g.setFont(Font2);
-            g.setColor(Color.MAGENTA);
+            g.setColor(Color.ORANGE);
             g.drawString("3",edges[3][0],edges[3][1]);
             g.drawString("1",edges[0][0],edges[0][1]);
             g.drawString("2",edges[4][0],edges[4][1]);
@@ -234,7 +231,7 @@ public class KruskalAlgorithmTutorial extends GLCanvas implements GLEventListene
     
     public static void main(String [] args)
     {
-        JFrame jf = new JFrame("Image in canvas");
+        JFrame jf = new JFrame("Kruskal Algorithm");
         KruskalAlgorithmTutorial canvas = new KruskalAlgorithmTutorial();
         jf.add(canvas);
         jf.setSize(1000,1000);
