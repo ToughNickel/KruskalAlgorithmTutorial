@@ -237,6 +237,7 @@ public class KruskalAlgorithmTutorial extends GLCanvas implements GLEventListene
         jf.setSize(1000,1000);
         jf.setVisible(true);
         jf.setLocationRelativeTo(null);
+        jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
     public void init(GLAutoDrawable drawable) 
