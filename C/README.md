@@ -1,4 +1,4 @@
-#KruskalAlgorithmTutorial
+# KruskalAlgorithmTutorial
 
 This Branch contains the C OpenGL code for the Kruskal Algorithm Tutorial. 
 The installation instructions are given in the [file](How_to_setup.txt).
