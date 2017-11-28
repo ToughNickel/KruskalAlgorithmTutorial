@@ -23,6 +23,33 @@ void initial_mode()
 	gluOrtho2D(0.0,1000.0,0.0,1000.0);
 }
 
+void assignment()
+{
+	int d = 250;int f = 100;int i;
+	//vertex assign
+	start[0][0] = 254;start[0][1] = 820;
+	start[1][0] = start[0][0] + (d / 2);start[1][1] = start[0][1] + f;
+	start[2][0] = start[0][0] + (d + (d / 2));start[2][1] = start[0][1] + f;
+	start[3][0] = start[0][0] + (2*d);start[3][1] = start[0][1];
+	start[4][0] = start[0][0] + d;start[4][1] = start[0][1] - f;
+	start[5][0] = start[0][0] + d;start[5][1] = start[0][1];
+	
+	//end [][] assign
+	for(i = 0;i < 10;i++) end[i] = start[i][1];
+	
+	//pl[][] assign
+	pl[0][0] = 286;pl[0][1] = 868;
+	pl[4][0] = pl[0][0] + (d / 2) - 2;pl[4][1] = pl[0][1];
+	pl[5][0] = pl[0][0] + d + 2;pl[5][1] = pl[0][1];
+	pl[6][0] = pl[0][0] + (d + (d / 2));pl[6][1] = pl[0][1];
+	pl[3][0] = pl[0][0] + d - 45;pl[3][1] = pl[0][1] + (f / 2) + 10;
+	pl[1][0] = start[0][0] + (d / 2);pl[1][1] = start[0][1] + 10;
+	pl[7][0] = pl[1][0] + (1 * d);pl[7][1] = pl[1][1];
+	pl[2][0] = pl[1][0];pl[2][1] = pl[0][1] - (d / 2);
+	pl[8][0] = pl[2][0] + d;pl[8][1] = pl[2][1];
+	pl[9][0] = pl[2][0] + (d / 2) - 20;pl[9][1] = pl[2][1] + (d / 8);
+}
+
 void Write(char *string,int x,int y)
 {
 	assignment();
@@ -115,33 +142,6 @@ void edges(int x1,int y1,int x2,int y2)
         glVertex2d(x1 , y1);
         glVertex2d(x2 , y2);
     glEnd();
-}
-
-void assignment()
-{
-	int d = 250;int f = 100;int i;
-	//vertex assign
-	start[0][0] = 254;start[0][1] = 820;
-	start[1][0] = start[0][0] + (d / 2);start[1][1] = start[0][1] + f;
-	start[2][0] = start[0][0] + (d + (d / 2));start[2][1] = start[0][1] + f;
-	start[3][0] = start[0][0] + (2*d);start[3][1] = start[0][1];
-	start[4][0] = start[0][0] + d;start[4][1] = start[0][1] - f;
-	start[5][0] = start[0][0] + d;start[5][1] = start[0][1];
-	
-	//end [][] assign
-	for(i = 0;i < 10;i++) end[i] = start[i][1];
-	
-	//pl[][] assign
-	pl[0][0] = 286;pl[0][1] = 868;
-	pl[4][0] = pl[0][0] + (d / 2) - 2;pl[4][1] = pl[0][1];
-	pl[5][0] = pl[0][0] + d + 2;pl[5][1] = pl[0][1];
-	pl[6][0] = pl[0][0] + (d + (d / 2));pl[6][1] = pl[0][1];
-	pl[3][0] = pl[0][0] + d - 45;pl[3][1] = pl[0][1] + (f / 2) + 10;
-	pl[1][0] = start[0][0] + (d / 2);pl[1][1] = start[0][1] + 10;
-	pl[7][0] = pl[1][0] + (1 * d);pl[7][1] = pl[1][1];
-	pl[2][0] = pl[1][0];pl[2][1] = pl[0][1] - (d / 2);
-	pl[8][0] = pl[2][0] + d;pl[8][1] = pl[2][1];
-	pl[9][0] = pl[2][0] + (d / 2) - 20;pl[9][1] = pl[2][1] + (d / 8);
 }
 
 void Graph()
