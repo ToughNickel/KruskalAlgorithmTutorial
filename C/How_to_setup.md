@@ -12,7 +12,7 @@ List of things which you need to operate the code
 Install MinGW before doing anything. The system files should be there in `C:\MinGW` after installing.
 
 ## FreeGlut setup
-- Unzip the file. Open it, go to `bin` , choose **freeglut.dll** (I know there's a x64 folder which contains another freeglut.dll too, DONT TOUCH THAT). Copy the dll and paste it to the following locations.
+- Unzip the file. Open it, go to `bin` , choose **freeglut.dll** (I know there's a x64 folder which contains another freeglut.dll too, DON'T TOUCH THAT). Copy the dll and paste it to the following locations.
 `C:\Windows`
 `C:\Windows\System`
 `C:\Windows\System32`
