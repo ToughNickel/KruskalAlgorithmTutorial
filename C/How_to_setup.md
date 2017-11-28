@@ -14,10 +14,10 @@ Install MinGW before doing anything. The system files should be there in `C:\Min
 ## FreeGlut setup
 - Unzip the file. Open it, go to `bin` , choose **freeglut.dll** (I know there's a x64 folder which contains another freeglut.dll too, DONT TOUCH THAT). Copy the dll and paste it to the following locations.
 ``
-C:\Windows
-C:\Windows\System
-C:\Windows\System32
-C:\Windows\SysWOW64
+C:\Windows.
+C:\Windows\System.
+C:\Windows\System32.
+C:\Windows\SysWOW64.
 ``
 set your PATH variable to `C:\Windows\SysWOW64`.
 - Now go back, and then go to `lib`, select **libfreeglut.a** and **libfreeglut_static.a** (Again, don't go into x64 folder), paste it to `C:\MinGW\lib`.
