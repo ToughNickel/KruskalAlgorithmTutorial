@@ -7,7 +7,7 @@ List of things which you need to operate the code
 - [Code::Blocks 16.01](https://sourceforge.net/projects/codeblocks/files/Binaries/16.01/Windows/codeblocks-16.01-setup.exe/download).
 - [MinGW](http://www.mingw.org/).
 - [FreeGlut](https://www.transmissionzero.co.uk/files/software/development/GLUT/freeglut-MinGW.zip).
-- [SOIL](www.lonesock.net/files/soil.zip).
+- [SOIL](http://www.lonesock.net/files/soil.zip).
 
 Install MinGW before doing anything. The system files should be there in `C:\MinGW` after installing.
 
